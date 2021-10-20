@@ -65,7 +65,8 @@
                 "glob": "pdf.worker.min.js",
                 "input": "node_modules/pdfjs-dist/build",
                 "output": "/"
-              }
+              },
+              "src/manifest.webmanifest"
             ],
             "styles": [
               "src/custom-style.scss"
@@ -93,7 +94,9 @@
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.prod.ts"
                 }
-              ]
+              ],
+              "serviceWorker": true,
+              "ngswConfigPath": "ngsw-config.json"
             }
           }
         },
@@ -163,7 +166,8 @@
                 "glob": "pdf.worker.js",
                 "input": "node_modules/pdfjs-dist/build",
                 "output": "/"
-              }
+              },
+              "src/manifest.webmanifest"
             ]
           }
         },
